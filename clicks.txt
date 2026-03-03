@@ -1,0 +1,552 @@
+CADD 
+
+ 3-4  ///
+
+
+
+
+
+1. CADD   CADD
+
+
+1. CADD   CADD
+2.  Garbage In, Garbage Out
+
+
+1. CADD   CADD
+2.  Garbage In, Garbage Out
+3. Molecular Docking 
+
+
+1. CADD   CADD
+2.  Garbage In, Garbage Out
+3. Molecular Docking 
+4. MD 
+
+
+1. CADD   CADD
+2.  Garbage In, Garbage Out
+3. Molecular Docking 
+4. MD 
+5.  
+
+CADD  
+
+1.1  CADD
+
+1.1  CADD
+
+
+1.1  CADD
+ """"""CADD ""
+
+1.1  CADD
+ """"""CADD "" 
+ (SBDD)  (LBDD)
+
+1.2 
+
+1.2 
+ (Lock and Key)
+  
+
+1.2 
+ (Lock and Key)
+  
+ (Induced Fit)
+ "" 
+
+1.2 
+ (Lock and Key)
+  
+ (Induced Fit)
+ "" 
+
+ "" 
+Free Energy, $\Delta G$
+
+
+
+Garbage In, Garbage Out
+
+
+2.1  (1/2)
+ RCSB PDB  .pdb 
+
+2.1  (1/2)
+ RCSB PDB  .pdb 
+PDB 
+
+2.1  (1/2)
+ RCSB PDB  .pdb 
+PDB 
+X-ray  HisGlu/Asp  pH  Clash
+
+2.1  (2/2)
+
+2.1  (2/2)
+
+
+2.1  (2/2)
+
+1. "" 2.  3. pH 7.4 4.  (Energy Minimization)
+
+2.2 
+
+2.2 
+SMILES  2D   SMILES   @  C[C@H](N)C(=O)O (L-Ala) vs C[C@@H](N)C(=O)O (D-Ala)  /  \  C/C=C\C () vs C/C=C/C ()
+
+2.2 
+SMILES  2D   SMILES   @  C[C@H](N)C(=O)O (L-Ala) vs C[C@@H](N)C(=O)O (D-Ala)  /  \  C/C=C\C () vs C/C=C/C ()
+ (Enumeration)  (-COOH vs -COO) (-NH vs -NH)  vs  R/SE/Z
+
+2.2 
+SMILES  2D   SMILES   @  C[C@H](N)C(=O)O (L-Ala) vs C[C@@H](N)C(=O)O (D-Ala)  /  \  C/C=C\C () vs C/C=C/C ()
+ (Enumeration)  (-COOH vs -COO) (-NH vs -NH)  vs  R/SE/Z
+3D  2D  3D 
+
+Molecular Docking
+
+PoseAffinity
+
+3.1 Search
+""
+
+3.1 Search
+"" X,Y,ZX,Y,ZRotatable Bonds
+
+3.1 Search
+""
+X,Y,ZX,Y,ZRotatable Bonds 
+  (Monte Carlo)  (Genetic Algorithm)"" AutoDock, GOLD  Schrödinger Glide, FlexX
+
+3.1 Scoring
+""
+
+3.1 Scoring
+"" 
+
+3.1 Scoring
+"" 
+Gbind  Evdw + Eelec + Ehbond + Gsolv
+
+3.1 Scoring
+
+""
+
+
+
+Gbind  Evdw + Eelec + Ehbond + Gsolv
+
+
+
+(Evdw
+
+)--
+
+
+
+
+
+
+(Eelec
+
+)--
+
+
+
+
+ (Ehbond) 
+
+
+
+(Gsolv
+
+)
+
+
+3.1 Scoring
+
+""
+
+
+
+Gbind  Evdw + Eelec + Ehbond + Gsolv
+
+
+
+(Evdw
+
+)--
+
+
+
+
+
+
+(Eelec
+
+)--
+
+
+
+
+ (Ehbond)
+
+
+
+(Gsolv
+
+)
+
+
+Docking Score  Ranking
+
+3.2 
+
+3.2 
+1.  (Rigid Docking)
+ 
+
+3.2 
+1.  (Rigid Docking)  
+2.  (Semi-flexible)   
+
+3.2 
+1.  (Rigid Docking)  
+2.  (Semi-flexible)   
+3.  (Induced Fit)  
+
+ MD
+ 
+
+4.1  Docking  MD
+""
+
+4.1  Docking  MD
+"" ""
+
+4.1  Docking  MD
+""
+""  Pose 1ns  MD 
+
+4.1  Docking  MD
+""
+""  Pose 1ns  MD  MD 
+
+4.1  Docking  MD
+""
+""  Pose 1ns  MD  MD   MD  MM-GBSA, FEP
+
+4.2 MD F = ma
+
+4.2 MD F = ma
+1.  (Force Field)
+
+4.2 MD F = ma
+1.  (Force Field)
+
+     
+AMBER, CHARMM, OPLS, GROMOS
+
+4.2 MD F = ma
+1.  (Force Field)
+
+     
+AMBER, CHARMM, OPLS, GROMOS
+2.  (Time Step)
+
+4.2 MD F = ma
+1.  (Force Field)
+
+     
+AMBER, CHARMM, OPLS, GROMOS
+2.  (Time Step)
+ 2  (2 fs, 2 × 10-15 s)
+
+4.2 MD F = ma
+1.  (Force Field)
+
+     
+AMBER, CHARMM, OPLS, GROMOS
+2.  (Time Step)
+ 2  (2 fs, 2 × 10-15 s)
+
+3. 
+1.  2.  3.  4. 
+5.  +2fs
+  100  (100 ns)  5000 
+
+4.3 MD 
+
+4.3 MD 
+1.  - + Water Box + Na/Cl 
+
+4.3 MD 
+1.  - + Water Box + Na/Cl 
+2.  
+
+4.3 MD 
+1.  - + Water Box + Na/Cl 
+2.  
+3.  (Equilibration) NVT 0K  310K NPT1 atm
+
+4.3 MD 
+1.  - + Water Box + Na/Cl 
+2.  
+3.  (Equilibration) NVT 0K  310K NPT1 atm
+4.  (Production Run) 
+
+4.4  MD 
+
+4.4  MD 
+RMSD ()  = /  = 
+
+4.4  MD 
+RMSD ()  = /  = 
+RMSF ()  = Loop   = 
+
+4.4  MD 
+RMSD ()  = /  = 
+RMSF ()  = Loop   = 
+ (Occupancy)  100ns  5% 
+
+
+
+Docking vs MD 
+
+Docking vs MD 
+
+
+
+ (Docking)  (MD)
+
+ 
+
+ (Snapshot)  (Movie)  (Implicit)  (Explicit Water)
+
+  (Rigid)
+
+ (Fully Flexible)
+
+  -  /   -  /    
+
+  CPU
+
+ GPU
+
+ (1/2)
+
+
+
+
+
+
+
+
+
+ (1/2)
+
+
+
+
+
+
+
+PDB
+
+.pdb
+
+/
+
+ PDB  mmCIF
+
+ (1/2)
+
+
+
+
+
+
+
+
+
+PDB
+
+.pdb
+
+PDBx/mmCIF .cif
+
+/ /+
+
+PDB  mmCIF 
+
+ (1/2)
+
+
+
+
+
+
+
+
+
+PDB
+
+.pdb
+
+PDBx/mmCIF .cif
+
+/ /+
+
+PDB  mmCIF 
+
+FASTA
+
+.fasta/.fa 
+
+ PLM 
+
+ (1/2)
+
+
+
+
+
+
+
+
+
+PDB
+
+.pdb
+
+PDBx/mmCIF .cif
+
+/ /+
+
+PDB  mmCIF 
+
+FASTA
+
+.fasta/.fa 
+
+ PLM 
+
+SMILES
+
+.smi
+
+
+
+/
+
+ (1/2)
+
+
+
+
+
+
+
+
+
+PDB
+
+.pdb
+
+PDBx/mmCIF .cif
+
+/ /+
+
+PDB  mmCIF 
+
+FASTA
+
+.fasta/.fa 
+
+ PLM 
+
+SMILES
+
+.smi
+
+
+
+/
+
+SDF
+
+.sdf
+
+ + 
+
+
+
+ (2/2)
+
+ (2/2)
+
+
+
+
+
+
+
+MOL2 MOL
+
+.mol2 .mol
+
+ 3D + / 
+
+MAE/MAEGZ
+
+.mae/.maegz
+
+Schrödinger 
+
+PDBQT
+
+.pdbqt
+
+AutoDock/Vina 
+
+  V2000/V3000   
+
+ (2/2)
+
+
+
+
+
+
+
+MOL2 MOL
+
+.mol2 .mol
+
+ 3D + / 
+
+MAE/MAEGZ
+
+.mae/.maegz
+
+Schrödinger 
+
+PDBQT
+
+.pdbqt
+
+AutoDock/Vina 
+
+ 
+
+  V2000/V3000   
+
+
+CADD  
+PDB  Docking  MD
+ 
+
+
+
